@@ -45,7 +45,7 @@ const index = () => {
 
       <div className="card-container">
         <h3 className="text-xl mb-8 font-semibold border-b-2 border-gray-400 pb-4">Log In</h3>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
+        <div className="grid grid-cols-1 gap-4 mb-4">
           <input
             name="name"
             placeholder="Name"
@@ -78,7 +78,7 @@ const index = () => {
             onClick={handleCommentSubmit}
             className="btn-container bg-primary text-white hover:tracking-wider"
           >
-            Post Comment
+            Login
           </button>
           {showSuccessMessage && <span className="text-xl float-right font-semibold mt-3 text-green-500">Comment submitted for review</span>}
         </div>
