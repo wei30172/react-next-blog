@@ -70,7 +70,7 @@ const CommentsForm = ({ slug }) => {
           setShowSuccessMessage(true)
           setTimeout(() => {
             setShowSuccessMessage(false)
-          }, 3000)
+          }, 6000)
         }
       })
   }

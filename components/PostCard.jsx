@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import moment from 'moment'
 
 const PostCard = ({ post }) => {
@@ -17,7 +18,8 @@ const PostCard = ({ post }) => {
       </h1>
       <div className="block lg:flex text-center items-center justify-center mb-8 w-full">
         <div className="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8">
-          <img
+          <Image
+            unoptimized
             src={post.author.photo.url}
             alt={post.author.name}
             height="30px"

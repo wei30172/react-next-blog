@@ -29,7 +29,7 @@ const Home = ({posts}) => {
 export default Home
 
 // Fetch data when build
-export async function getStaticProps() {
+export const getStaticProps = async () => {
   const posts = (await getPosts()) || []
   return {
     props: { posts },
