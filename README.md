@@ -1,4 +1,5 @@
-# react-next-blog: Next.js + Tailwind CSS
+# [react-next-blog](https://react-next-blog-202203.netlify.app/): Next.js + Tailwind CSS
+Test email & password : test@testnet.co.us / test1234
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
