@@ -1,7 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { submitComment } from '../services'
+import AuthContext from '../stores/authContext'
 
 const CommentsForm = ({ slug }) => {
+  // const { user } = useContext(AuthContext)
+  // console.log(user)
   const [error, setError] = useState(false)
   const [localStorage, setLocalStorage] = useState(null)
   const [showSuccessMessage, setShowSuccessMessage] = useState(false)
