@@ -4,7 +4,7 @@ import AuthContext from '../stores/authContext'
 
 const Header = () => {
   const { user, login, logout, authReady } = useContext(AuthContext)
-  console.log(user)
+  // console.log(user)
   
   return (
     <div className="container mx-auto px-10 mb-8">
