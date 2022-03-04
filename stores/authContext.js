@@ -16,18 +16,18 @@ export const AuthContextProvider = ({ children }) => {
     netlifyIdentity.on('login', (user) => {
       setUser(user)
       netlifyIdentity.close()
-      console.log('log in')
+      // console.log('log in')
     })
 
     netlifyIdentity.on('logout', () => {
       setUser(null)
-      console.log('log out')
+      // console.log('log out')
     })
 
     netlifyIdentity.on('init', (user) => {
       setUser(user)
       setAuthReady(true)
-      console.log('init')
+      // console.log('init')
     })
 
     // init netlify identity connection
@@ -48,6 +48,9 @@ export const AuthContextProvider = ({ children }) => {
     netlifyIdentity.logout()
   }
 
+  if (user) {
+    window.localStorage.setItem('email', user.email)
+  }
   const context = { user, login, logout, authReady }
 
   return (

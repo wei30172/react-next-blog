@@ -13,9 +13,9 @@ const CommentsForm = ({ slug }) => {
     if (authReady) {
       setLocalStorage(window.localStorage)
       const initalFormData = {
-        name: window.localStorage.getItem('name'),
-        email: window.localStorage.getItem('email'),
-        storeData: window.localStorage.getItem('name') || window.localStorage.getItem('email'),
+        name: window.localStorage.getItem('name') || '',
+        email: window.localStorage.getItem('email') || '',
+        storeData: window.localStorage.getItem('name') || '',
       }
       setFormData(initalFormData)
     }
@@ -53,10 +53,8 @@ const CommentsForm = ({ slug }) => {
 
     if (storeData) {
       localStorage.setItem('name', name)
-      localStorage.setItem('email', email)
     } else {
       localStorage.removeItem('name')
-      localStorage.removeItem('email')
     }
 
     submitComment(commentObj)
@@ -64,7 +62,6 @@ const CommentsForm = ({ slug }) => {
         if (res.createComment) {
           if (!storeData) {
             formData.name = ''
-            formData.email = ''
           }
           formData.comment = ''
           setFormData((prev) => ({
@@ -83,8 +80,8 @@ const CommentsForm = ({ slug }) => {
     <div className="card-container">
       <h3 className="text-xl mb-8 font-semibold border-b-2 border-gray-400 pb-4">Reply the post</h3>
       {authReady && (<>
-        {!user && <p className='my-8'>You must be
-          <span onClick={login} className='btn-container align-middle mx-1 text-primary hover:text-secondary-100 hover:bg-primary'>
+        {!user && <p className='my-8'>Please
+          <span onClick={login} className='btn-container align-middle mx-2 text-primary hover:text-secondary-100 hover:bg-primary'>
             logged in
           </span>
         to leave comments...</p>}
@@ -102,22 +99,20 @@ const CommentsForm = ({ slug }) => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
             <input
               name="name"
-              placeholder="Name"
+              placeholder="Nickname"
               type="text"
               value={formData.name}
               onChange={onInputChange}
               className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
             />
-            <input
+            {/* <input
               name="email"
               placeholder="Email"
               type="email"
               value={formData.email}
               onChange={onInputChange}
               className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
-            />
-          </div>
-          <div className="grid grid-cols-1 gap-4 mb-4">
+            /> */}
             <div>
               <input
                 id="storeData"
@@ -128,10 +123,10 @@ const CommentsForm = ({ slug }) => {
                 onChange={onInputChange}
               />
               <label
-                className="text-gray-500 cursor-pointer ml-2"
+                className="text-gray-500 text-sm cursor-pointer ml-2"
                 htmlFor="storeData"
               >
-                Save my name, email in this browser for the next time I comment.
+                Save my nickname in this browser for the next time I comment.
               </label>
             </div>
           </div>

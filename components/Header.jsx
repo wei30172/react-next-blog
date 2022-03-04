@@ -14,7 +14,7 @@ const Header = () => {
           <ul className="flex items-center ml-auto list-none p-0">
             {!user && <li className="inline-block ml-16" onClick={login} className="btn-container align-middle ml-2 text-primary border-primary bg-secondary-100 md:border-4 hover:text-secondary-100 hover:bg-primary">
               Login/Signup</li>}
-            {user && <li className="inline-block ml-16">{user.email}</li>}
+            {user && <li className="text-sm ml-2 lg:text-lg lg:ml-16">{user.email}</li>}
             {user && <li className="inline-block ml-16" onClick={logout} className="btn-container align-middle ml-2 text-primary border-primary bg-secondary-100 md:border-4 hover:text-secondary-100 hover:bg-primary">
               Logout</li>}
           </ul>

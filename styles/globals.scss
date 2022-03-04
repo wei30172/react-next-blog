@@ -51,7 +51,7 @@ a {
 }
 
 .card-container {
-  @apply bg-secondary-100 shadow-lg rounded-lg p-8 pb-12 mb-8;
+  @apply bg-secondary-100 shadow-lg rounded-lg p-4 sm:p-8 pb-12 mb-8;
 }
 
 .btn-container {
