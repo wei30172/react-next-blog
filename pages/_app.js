@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import { AuthContextProvider } from '../stores/authContext'
-import { Layout } from '../components'
-import '../styles/globals.scss'
+import React, { useEffect, useState } from "react";
+import { AuthContextProvider } from "../stores/authContext";
+import { Layout } from "../components";
+import "../styles/globals.scss";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </Layout>
     </AuthContextProvider>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
