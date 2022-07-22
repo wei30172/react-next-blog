@@ -5,7 +5,7 @@ const AuthContext = createContext({
   user: null,
   login: () => {},
   logout: () => {},
-  authReady: true,
+  authReady: false,
 })
 
 export const AuthContextProvider = ({ children }) => {
