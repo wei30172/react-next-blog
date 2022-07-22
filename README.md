@@ -1,28 +1,42 @@
-# [react-next-blog](https://react-next-blog-202203.netlify.app/): Next.js, Tailwind CSS, GraphQL, Netlify Identity
-Test email & password : test@testnet.co.us / test1234
+## Next.js Based Modern Blog Application
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+Used React, Next.js, Tailwind CSS, and GraphQL to build a blog Website with recent posts and categories.
 
-## Preview
+## Project Screen Shots
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+## Test email & password
+test@testnet.co.us / test1234
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Getting Started with Create React App
 
-## Deploy your own
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## Installation
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+### `yarn install` (or `npm install`)
 
-## How to use
+## Available Scripts
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+In the project directory, you can run:
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+### `yarn dev` (or `npm run dev`)
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `yarn build` (or `npm run build`)
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn prettier` (or `npm run prettier`)
+
+Launches the Prettier to format code layout. Configure Prettier via .prettierrc file.
