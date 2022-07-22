@@ -2,7 +2,7 @@
 
 Used React, Next.js, Tailwind CSS, and GraphQL to build a blog Website with recent posts and categories.
 
-## Project Screen Shots
+## Project Screenshots
 ![full-stack-web1](https://user-images.githubusercontent.com/60259324/180361672-c5c9484a-0466-430c-a0ed-e51a29023a45.png)
 ![full-stack-web4](https://user-images.githubusercontent.com/60259324/180361674-ac559473-ff78-4938-bff3-4bb7f8f3b223.png)
 ![full-stack-web5](https://user-images.githubusercontent.com/60259324/180361676-6c3848c2-903c-47b5-9027-967879b74b07.png)
