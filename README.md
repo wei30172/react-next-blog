@@ -1,7 +1,7 @@
 ## Next.js Based Modern Blog Application
 
-Used React, Next.js, Tailwind CSS, and GraphQL to build a blog Website with recent posts and categories.\
-1. Authenticate users with Netlify Identity. Users can log in to reply to the posts.\
+Used React, Next.js, Tailwind CSS, and GraphQL to build a blog Website with recent posts and categories.
+1. Authenticate users with Netlify Identity. Users can log in to reply to the posts.
 2. Users can browse recent posts and choose posts based on categories.
 
 ## Project Screenshots
