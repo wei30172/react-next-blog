@@ -94,7 +94,7 @@ const CommentsForm = ({ slug }) => {
                 onClick={login}
                 className="btn-container mx-2 align-middle text-primary hover:bg-primary hover:text-secondary-100"
               >
-                logged in
+                log in
               </span>
               to leave comments...
             </p>
